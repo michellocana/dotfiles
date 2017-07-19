@@ -1,0 +1,7 @@
+{
+	"syntaxProfiles": {
+		"html" : {
+			"attr_quotes": "single"
+		},
+	}
+}

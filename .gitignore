@@ -1,0 +1,21 @@
+# Gulp --------------------------------
+node_modules
+npm-debug.log*
+# -------------------------------------
+
+# IDE's auto-generated folders/files --
+.settings
+.buildpath
+.project
+.vscode
+# -------------------------------------
+
+# Folder view configuration files -----
+.DS_Store
+Desktop.ini
+# -------------------------------------
+
+# Thumbnail cache files ---------------
+._*
+Thumbs.db
+# -------------------------------------

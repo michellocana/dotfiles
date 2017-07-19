@@ -1,0 +1,66 @@
+// Location: PATH/TO/SUBLIME/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+			// Cmder
+			{
+				"caption": "Cmder",
+				"id": "side-bar-files-open-with-cmder",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "C:/Program Files (x86)/cmder/Cmder.exe", 
+					"extensions":"",
+					"args":["/single","%CWD%"]
+				},
+				"open_automatically" : false
+			},
+
+			// Explorer
+			{
+				"caption": "Explorer",
+				"id": "side-bar-files-open-with-explorer",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "C:/Windows/explorer.exe", 
+					"extensions":"",
+					"args":[]
+				},
+				"open_automatically" : false
+			},
+
+			// Separator
+			{"caption":"-"},
+
+			// Photoshop
+			{
+				"caption": "Photoshop",
+				"id": "side-bar-files-open-with-photoshop",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "C:/Program Files/Adobe/Adobe Photoshop CC 2015/Photoshop.exe", 
+					"extensions":"psd|png|jpg|jpeg",
+					"args":[]
+				},
+				"open_automatically" : false
+			},
+
+			// Illustrator
+			{
+				"caption": "Illustrator",
+				"id": "side-bar-files-open-with-illustrator",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "C:/Program Files/Adobe/Adobe Illustrator CC 2015/Support Files/Contents/Windows/Illustrator.exe", 
+					"extensions":"svg|ai",
+					"args":[]
+				},
+				"open_automatically" : false
+			},
+		]
+	}
+]
