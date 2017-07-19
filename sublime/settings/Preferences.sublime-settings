@@ -25,7 +25,13 @@
 
 		// Hugo
 		"static/dist",
-		"public"
+		"public",
+
+		// IDE's
+		".vscode",
+		".settings",
+		".buildpath",
+		".project"
 	],
 	"font_size": 10,
 	"index_exclude_patterns":
