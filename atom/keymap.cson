@@ -2,8 +2,34 @@
 	'tab': 'emmet:expand-abbreviation-with-tab'
 
 'atom-text-editor':
-	'ctrl-up': 'emmet:increment-number-by-1'
-	'ctrl-down': 'emmet:decrement-number-by-1'
+	'f12': 'editor:auto-indent'
 	'ctrl-shift-up': 'editor:move-line-up'
 	'ctrl-shift-down': 'editor:move-line-down'
-	'f12': 'editor:auto-indent'
+
+	# Emmet
+	'ctrl-up': 'emmet:increment-number-by-1'
+	'ctrl-down': 'emmet:decrement-number-by-1'
+	'alt-shift-up': 'emmet:increment-number-by-10'
+	'alt-shift-down': 'emmet:decrement-number-by-10'
+
+	# Switch to tabs with ctrl instead of alt
+	'ctrl-1': 'pane:show-item-1'
+	'ctrl-2': 'pane:show-item-2'
+	'ctrl-3': 'pane:show-item-3'
+	'ctrl-4': 'pane:show-item-4'
+	'ctrl-5': 'pane:show-item-5'
+	'ctrl-6': 'pane:show-item-6'
+	'ctrl-7': 'pane:show-item-7'
+	'ctrl-8': 'pane:show-item-8'
+	'ctrl-9': 'pane:show-item-9'
+
+	# Numpad keys are interpreted differently
+	'ctrl-numpad1': 'pane:show-item-1'
+	'ctrl-numpad2': 'pane:show-item-2'
+	'ctrl-numpad3': 'pane:show-item-3'
+	'ctrl-numpad4': 'pane:show-item-4'
+	'ctrl-numpad5': 'pane:show-item-5'
+	'ctrl-numpad6': 'pane:show-item-6'
+	'ctrl-numpad7': 'pane:show-item-7'
+	'ctrl-numpad8': 'pane:show-item-8'
+	'ctrl-numpad9': 'pane:show-item-9'
