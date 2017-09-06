@@ -1,0 +1,13 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    softTabs: false
+    tabLength: 4
+    tabType: "hard"
+  welcome:
+    showOnStartup: false
