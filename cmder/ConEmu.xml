@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2018-09-11 13:38:28" build="180206">
+		<key name=".Vanilla" modified="2018-10-25 09:42:57" build="180206">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -150,11 +150,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="-1120"/>
-			<value name="ConWnd Y" type="long" data="305"/>
+			<value name="ConWnd X" type="long" data="353"/>
+			<value name="ConWnd Y" type="long" data="-879"/>
 			<value name="LastMonitor" type="string" data="0,0,0,0"/>
-			<value name="ConWnd Width" type="dword" data="00000053"/>
-			<value name="ConWnd Height" type="dword" data="00000012"/>
+			<value name="ConWnd Width" type="dword" data="0000003b"/>
+			<value name="ConWnd Height" type="dword" data="0000000a"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -202,7 +202,7 @@
 			<value name="ClipboardConfirmEnter" type="hex" data="01"/>
 			<value name="ClipboardConfirmLonger" type="ulong" data="200"/>
 			<value name="FarGotoEditorOpt" type="hex" data="01"/>
-			<value name="FarGotoEditorPath" type="string" data='#atom.cmd -n%1 "%3"'/>
+			<value name="FarGotoEditorPath" type="string" data='#code.cmd "%3" -a'/>
 			<value name="HighlightMouseRow" type="hex" data="00"/>
 			<value name="HighlightMouseCol" type="hex" data="00"/>
 			<value name="FixFarBorders" type="hex" data="01"/>
