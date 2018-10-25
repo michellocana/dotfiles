@@ -14,3 +14,6 @@ gl=log --pretty=oneline -n 20 --graph --abbrev-commit
 is=ionic serve
 iba=ionic build android
 ira=ionic run android
+
+;= rem Open virtual hosts
+hosts=code %windir%/System32/drivers/etc/hosts
