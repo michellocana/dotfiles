@@ -8,7 +8,7 @@ gpl=git pull
 gps=git push
 gadal=git add --all
 gd=git diff $
-gl=log --pretty=oneline -n 20 --graph --abbrev-commit
+gl=git log --pretty=oneline -n 20 --graph --abbrev-commit
 
 ;= rem Ionic
 is=ionic serve
