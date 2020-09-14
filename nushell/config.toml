@@ -15,5 +15,6 @@ startup = [
   "alias pipi [] { pip install -r requirements.txt }",
 
   # Misc
-  "alias hosts [] { code %windir%/System32/drivers/etc/hosts }"
+  "alias hosts [] { code %windir%/System32/drivers/etc/hosts }",
+  "alias aliases [] { code $nu.config-path }"
 ]
