@@ -1,0 +1,19 @@
+startup = [
+  # Folders
+  "alias www [] { cd \"C:\\path\\to\\www\" }",
+
+  # Git
+  "alias gcm [] { git rev-parse --abbrev-ref HEAD | trim | split column / | format \"{Column1}({Column2}):\" | clip }",
+  "alias gst [] { git status }",
+  "alias gpl [] { git pull }",
+  "alias gps [] { git push }",
+  "alias gadal [] { git add --all }",
+  "alias gd [] { git diff $ }",
+  "alias gl [] { git log --pretty=oneline -n 20 --graph --abbrev-commit }",
+
+  # Python
+  "alias pipi [] { pip install -r requirements.txt }",
+
+  # Misc
+  "alias hosts [] { code %windir%/System32/drivers/etc/hosts }"
+]

@@ -1,0 +1,4 @@
+- key:
+    Ctrl: R
+  binding:
+    ClearScreen:
