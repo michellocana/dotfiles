@@ -1,3 +1,4 @@
+prompt = "echo $(starship prompt)"
 startup = [
   # Folders
   "alias www [] { cd \"C:\\path\\to\\www\" }",
@@ -18,3 +19,6 @@ startup = [
   "alias hosts [] { code %windir%/System32/drivers/etc/hosts }",
   "alias aliases [] { code $nu.config-path }"
 ]
+
+[line_editor]
+completion_match_method = "case-insensitive"
