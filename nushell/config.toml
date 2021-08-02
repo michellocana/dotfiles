@@ -1,5 +1,8 @@
 prompt = "echo $(starship prompt)"
 startup = [
+  # CSS
+  "def lh [fz, lh] { $lh / $fz | math round -p 2 | into string | clip }",
+
   # Folders
   "alias www [] { cd \"C:\\path\\to\\www\" }",
 
@@ -16,6 +19,7 @@ startup = [
   "alias pipi [] { pip install -r requirements.txt }",
 
   # Misc
+  "def kill [process] { taskkill /f /im $process }",
   "alias hosts [] { code %windir%/System32/drivers/etc/hosts }",
   "alias aliases [] { code $nu.config-path }"
 ]
