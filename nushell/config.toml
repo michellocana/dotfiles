@@ -26,3 +26,4 @@ startup = [
 
 [line_editor]
 completion_match_method = "case-insensitive"
+completion_type = "list"
