@@ -48,7 +48,8 @@ eval "$(pyenv init -)"
 # Keybinding
 bindkey ";5C" forward-word # ctrl + ->
 bindkey ";5D" backward-word # ctrl + <-
-bindkey "^[[3;5~" backward-kill-word
+#bindkey "^[[3;5~" backward-kill-word # ctrl + backspace (WSL)
+bindkey "^H" backward-kill-word # ctrl + backspace (Ubuntu)
 
 # Plugins
 antigen bundle zsh-users/zsh-autosuggestions
