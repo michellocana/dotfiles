@@ -40,7 +40,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Load plugin manager
 source ~/antigen.zsh
 
-# Load pyenv
+# Python
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -57,8 +57,7 @@ antigen bundle zpm-zsh/clipboard
 antigen apply
 
 # Aliases - Tools
-alias copy="pbcopy"
-alias paste="powershell.exe -command 'Get-Clipboard' | head -n -1" # TODO move this to linux solution
+alias copy="xsel -ib"
 # Aliases - Misc
 alias hosts="code /mnt/c/Windows/System32/drivers/etc/hosts"
 # Aliases - Paths
@@ -72,6 +71,7 @@ alias tools="coca; coca-tools"
 # Aliases - Helpers
 alias trim="sed -E -e 's/^\s*|\s*$//g'"
 # Aliases - Git
+alias gcb="git checkout -b"
 alias gcm="git rev-parse --abbrev-ref HEAD | trim | sed 's/\//(/g' | sed 's/$/): /g' | tr -d '\n' | copy"
 alias gl="git log --pretty=oneline -n 100 --graph --abbrev-commit"
 alias gadal="git add --all"
@@ -79,7 +79,22 @@ alias gst="git status"
 alias gpl="git pull"
 # Aliases - Python
 alias create-venv="python -m venv venv"
+alias website="python run.py website"
+alias admin="python run.py admin"
 # Aliases - Docker
-alias dps="sudo docker ps"
-alias ddown="sudo docker compose down"
-alias dup="sudo docker compose up -d --force-recreate --remove-orphans"
+alias dps="docker ps"
+alias ddown="docker compose down"
+alias dup="docker compose up -d --force-recreate --remove-orphans"
+
+# Dynamic aliases
+for folder in /var/www/cocacola/*; do
+  base_folder=$(echo $folder | sed 's/.*\///')
+  subfolders=$(ls $folder)
+  folder_patterns=("frontend" "frontend-trader" "backend")
+
+  for folder_pattern in ${folder_patterns[@]}; do
+    if [ -d "$folder/$folder_pattern" ]; then
+      eval "alias $base_folder$folder_pattern=\"cd $folder/$folder_pattern\""
+    fi
+  done
+done
