@@ -6,6 +6,27 @@ prompt adam1
 setopt histignorealldups sharehistory
 setopt autocd
 
+# Custom prompt configuration
+display_git_branch() {
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo " %F{blue}\ue725 $branch"
+  fi
+}
+
+display_node_version() {
+  if [ -f package.json ]; then
+    node_version="$(node -v)"
+    echo " %F{green}\ued0d $node_version"
+  fi
+}
+
+PROMPT='%B%F{green}$(pwd)%b$(display_git_branch)$(display_node_version)
+%}%F{white}$ %b%f%k'
+
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
