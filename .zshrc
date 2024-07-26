@@ -8,12 +8,15 @@ setopt autocd
 
 # Custom prompt configuration
 display_git_branch() {
-  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]];
-  then
-    :
-  else
-    echo " %F{blue}\ue725 $branch"
+  # Check whether the current directory is inside a git repository or not
+  if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    branch=$(git rev-parse --abbrev-ref HEAD)
+
+    if [[ $branch == "" ]]; then
+      echo ""
+    else
+      echo " %F{blue}\ue725 $branch"
+    fi
   fi
 }
 
