@@ -1,0 +1,17 @@
+/*
+  Paste this file on $HOME/Library/KeyBindings/DefaultKeyBinding.dict
+*/
+{
+  "\UF729"  = "moveToBeginningOfLine:"; // home
+  "\UF72B"  = "moveToEndOfLine:"; // end
+  "$\UF729" = "moveToBeginningOfLineAndModifySelection:";         /* Shift + Home */
+  "$\UF72B" = "moveToEndOfLineAndModifySelection:";               /* Shift + End */
+  "@\UF729" = "moveToBeginningOfDocument:";                       /* Cmd + Home */
+  "@\UF72B" = "moveToEndOfDocument:";                             /* Cmd + End */
+  "@$\UF729" = "moveToBeginningOfDocumentAndModifySelection:";    /* Shift + Cmd + Home */
+  "@$\UF72B" = "moveToEndOfDocumentAndModifySelection:";          /* Shift + Cmd + End */
+  "@\Uf702" = "moveWordLeft:";                                    /* Cmd + Left */
+  "@\Uf703" = "moveWordRight:";                                   /* Cmd + Right */
+  "@$\Uf702" = "moveWordLeftAndModifySelection:";                 /* Shift + Cmd + Left */
+  "@$\Uf703" = "moveWordRightAndModifySelection:";                /* Shift + Cmd + Right */
+}
